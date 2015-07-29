@@ -14,9 +14,3 @@ module.exports = function includeTag(cwd, contents) {
         }
     });
 };
-
-function log(str) {
-    console.log('--------------------');
-    console.log(str);
-    console.log('--------------------');
-}

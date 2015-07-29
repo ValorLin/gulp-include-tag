@@ -17,7 +17,7 @@ var gulp = require('gulp');
 var includeTag = require('gulp-include-tag');
 
 gulp.task('default', function () {
-	return gulp.src('src/file.ext')
+	return gulp.src('src/index.html')
 		.pipe(includeTag())
 		.pipe(gulp.dest('dist'));
 });
@@ -27,16 +27,6 @@ gulp.task('default', function () {
 ## API
 
 ### includeTag(options)
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
 
 ## License
 

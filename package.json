@@ -1,0 +1,32 @@
+{
+  "name": "gulp-include-tag",
+  "version": "0.0.0",
+  "description": "My first-rate gulp plugin",
+  "license": "MIT",
+  "repository": "weilao/gulp-include-tag",
+  "author": {
+    "name": "威老",
+    "email": "qqq123026689@126.com",
+    "url": "http://doctype-html.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "stream-array": "^1.1.0"
+  }
+}

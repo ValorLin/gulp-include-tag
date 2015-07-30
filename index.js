@@ -1,9 +1,7 @@
 'use strict';
 var gutil = require('gulp-util');
 var through = require('through2');
-var path = require('path');
-
-var includeTag = require('./includeTag');
+var includeTag = require('include-tag');
 
 module.exports = function (options) {
     return through.obj(function (file, enc, cb) {

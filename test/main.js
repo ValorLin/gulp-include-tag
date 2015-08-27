@@ -6,7 +6,9 @@ var test = require('./test-stream');
 var includeTag = require('../');
 
 function normalize(str) {
-    return str.replace(/\r\n/g, '\n');
+    return str
+		.replace(/\r\n/g, '\n')
+		.replace(/ +/gi, '');
 }
 
 it('should include file', function (cb) {
@@ -21,10 +23,10 @@ it('should include file', function (cb) {
                 normalize([
                     '<header>',
                     '    <ul>',
-                    '    <li>Home</li>',
-                    '    <li>Article</li>',
-                    '    <li>About</li>',
-                    '</ul>',
+                    '        <li>Home</li>',
+                    '        <li>Article</li>',
+                    '        <li>About</li>',
+                    '    </ul>',
                     '</header>',
                     '<footer>Footer</footer>'
                 ].join('\n'))

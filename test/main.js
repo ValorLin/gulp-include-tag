@@ -8,7 +8,7 @@ var includeTag = require('../');
 function normalize(str) {
     return str
 		.replace(/\r\n/g, '\n')
-		.replace(/ +/gi, '');
+		.replace(/\s+/gi, '');
 }
 
 it('should include file', function (cb) {

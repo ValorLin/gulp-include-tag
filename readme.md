@@ -1,4 +1,5 @@
-# gulp-include-tag [![Build Status](https://travis-ci.org/weilao/gulp-include-tag.svg?branch=master)](https://travis-ci.org/weilao/gulp-include-tag)
+# gulp-include-tag
+
 > Gulp plugin for [include-tag](https://github.com/weilao/include-tag).
 
 

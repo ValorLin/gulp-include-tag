@@ -1,6 +1,6 @@
 {
   "name": "gulp-include-tag",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Use the <include> tag in html file.",
   "license": "MIT",
   "repository": "weilao/gulp-include-tag",
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.4",
-    "include-tag": "^1.0.0",
+    "include-tag": "^1.1.0",
     "through2": "^0.6.5"
   },
   "devDependencies": {

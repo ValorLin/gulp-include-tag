@@ -2,6 +2,7 @@
 var gutil = require('gulp-util');
 var through = require('through2');
 var includeTag = require('include-tag');
+var path = require('path');
 
 module.exports = function (options) {
     return through.obj(function (file, enc, cb) {
@@ -16,6 +17,7 @@ module.exports = function (options) {
         }
 
         try {
+			gutil.log(file.path);
             file.contents = new Buffer(includeTag(
 				path.dirname(file.path),
                 file.contents.toString()

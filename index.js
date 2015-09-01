@@ -17,7 +17,7 @@ module.exports = function (options) {
 
         try {
             file.contents = new Buffer(includeTag(
-                file.cwd,
+				path.dirname(file.path),
                 file.contents.toString()
             ));
             this.push(file);

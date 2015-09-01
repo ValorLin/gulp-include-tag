@@ -22,7 +22,7 @@ module.exports = function (options) {
                 file.contents
 					.toString()
 					// Remove includeTag.browser.js
-					.replace(/<script.*?includeTag.browser.js.*?<\/script>/gi, '')
+					.replace(/<script.*?includeTag.browser.js.*?<\/script>\r?\n?/gi, '')
             ));
             this.push(file);
         } catch (err) {

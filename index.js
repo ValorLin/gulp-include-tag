@@ -17,10 +17,12 @@ module.exports = function (options) {
         }
 
         try {
-			gutil.log(file.path);
             file.contents = new Buffer(includeTag(
 				path.dirname(file.path),
-                file.contents.toString()
+                file.contents
+					.toString()
+					// Remove includeTag.browser.js
+					.replace(/<script.*?includeTag.browser.js.*?<\/script>/gi, '')
             ));
             this.push(file);
         } catch (err) {

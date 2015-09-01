@@ -1,6 +1,6 @@
 {
   "name": "gulp-include-tag",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Use the <include> tag in html file.",
   "license": "MIT",
   "repository": "weilao/gulp-include-tag",
